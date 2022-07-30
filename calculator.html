@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="general.css">
+    <script src="index1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main"> 
+        <div class="row  gx-0"><i onclick="_openh()" title="history" class="bi bi-clock-history"></i></div>
+        <div id="view" class="row  gx-0"></div>
+        <section>
+            <div>
+                <p>There is no history yet</p>
+            </div>
+            <span ><i title="close" onclick="_closeh()" class="bi bi-dash-circle-dotted"></i><i onclick="_clearh()"  title="clear all history" class="bi bi-trash"></i></span>
+        </section>
+        <div class="row  gx-0">
+            <span data-status="off" data-sign="%" onclick="_click(this)">%</span>
+            <span data-status="off" data-sign="CE" onclick="_click(this)">CE</span>
+            <span data-status="off" data-sign="C" onclick="_click(this)">C</span>
+            <span data-status="off" data-sign="DEL" onclick="_click(this)"><i class="bi bi-backspace"></i></span>
+        </div>
+        <div class="row   gx-0">
+            <span data-status="off" data-sign="1/x" onclick="_click(this)">1/x</span>
+            <span data-status="off" data-sign="x*2" onclick="_click(this)">x<sup> 2</sup></span>
+            <span data-status="off" data-sign="|x" onclick="_click(this)">&Sqrt;x</span>
+            <span data-status="off" data-f="d" onclick="_click(this)" data-sign="/"  style="font-size: 22px;">&#247;</span>
+        </div>
+        <div class="row  gx-0">
+            <span data-sign="7" data-status="on" onclick="_click(this)">7</span>
+            <span data-sign="8" data-status="on" onclick="_click(this)">8</span>
+            <span data-sign="9" data-status="on" onclick="_click(this)">9</span>
+            <span data-status="off" data-f="d" data-sign="*" onclick="_click(this)" style="font-size: 22px;"><i class="bi bi-x"></i></span>
+        </div>
+        <div class="row  gx-0">
+            <span data-sign="4" data-status="on" onclick="_click(this)">4</span>
+            <span data-sign="5" data-status="on" onclick="_click(this)">5</span>
+            <span data-sign="6" data-status="on" onclick="_click(this)">6</span>
+            <span data-status="off" data-f="d" data-sign="-" onclick="_click(this)" style="font-size: 22px;"><i class="bi bi-dash"></i></span>
+        </div>
+        <div class="row  gx-0">
+            <span data-sign="1" data-status="on" onclick="_click(this)">1</span>
+            <span data-sign="2" data-status="on" onclick="_click(this)">2</span>
+            <span data-sign="3" data-status="on" onclick="_click(this)">3</span>
+            <span data-status="off" data-f="d" data-sign="+" onclick="_click(this)" style="font-size: 22px;">+</span>
+        </div>
+        <div class="row  gx-0">
+            <span data-status="off" data-sign="+/-" onclick="_click(this)">+/-</span>
+            <span data-sign="0" data-status="on" onclick="_click(this)">0</span>
+            <span data-status="off" data-sign="." onclick="_click(this)">.</span>
+            <span  data-sign="=" onclick="_click(this)" style="font-size: 22px;">=</span>
+        </div>
+    </div>
+</body>
+</html>
